@@ -1,0 +1,1 @@
+After launching 'manag', launch 'client' to see their play.

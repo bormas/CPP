@@ -1,0 +1,12 @@
+$x := 7;
+$y := $x + 2;
+if $x then
+{
+				$x := $x + 1;
+}
+while $x
+{
+				goto @label;
+}
+@label
+print "Hello world";

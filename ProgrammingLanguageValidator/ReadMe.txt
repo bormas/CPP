@@ -1,0 +1,1 @@
+This program reads texts and check it for errors according to my model of programming language.
