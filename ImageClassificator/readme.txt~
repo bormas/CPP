@@ -1,0 +1,26 @@
+Работу выполнил Гончаров Борис Алексеевич группа 316
+1) Matrix<float> grayscale(BMP &img)
+Преобразует изображение BMP в матрицу яркости
+2) Matrix<float> sobel_x(Matrix<float> &img)
+Вертикальная свертка по вектору Собеля
+3) Matrix<float> sobel_y(Matrix<float> &img)
+Горизонтальная свертка по вектору Собеля
+4) Matrix<float> grad_dir(Matrix<float> &img1, Matrix<float> &img2)
+Берем вертикальную и горизонтальную свертки и получаем матрицу углов для каждого элемента матриц в пределах (0, pi)
+5) Matrix<float> grad_abs(Matrix<float> &img1, Matrix<float> &img2)
+Берем вертикальную и горизонтальную свертки и получаем матрицу корней суммы квадратов их значений(Евклидова норма)
+6) vector<float> normalization(vector<float> &hystogramm)
+Нормируем по Евклиду полученный вектор
+7) vector<float> oriented_hystogramm(Matrix<float> &g_abs, Matrix<float> &g_dir, unsigned int split, unsigned int div)
+Построение гистограммы ориентированных градиентов с помощью матрицы градинета абсолютных значений и матрицы направлений. Здесь split - разбиение интервала от (0, pi), а div - разбиение по вертикали и горизонтали на ячейки.
+8) vector<float> LBP(Matrix<float> img, unsigned int div)
+Построение локальных бинарных шаблонов. Здесь img - исходное изображение прошедшее через grayscale() и div - разбиение по вертикали и горизонтали на ячейки.
+9) vector<float> color_hystogramm(BMP &img)
+Построение гистограммы цветовых признаков. Здесь img - исходное изображение.
+P.S.
+Реализованы база и все дополнительные задания.
+Точность:
+Precision: 0.959596 база
+Precision: 0.989899 база + 1й доп
+Precision: 0.979798 база + 2й доп 
+Precision: 0.979798 база + все допы
