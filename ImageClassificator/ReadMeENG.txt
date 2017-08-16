@@ -1,6 +1,8 @@
 This programm identifies images according to model (data\multiclass\test\...)
 The model is trained according to given examples (data\multiclass\train\...)
 
+Unzip data.rar to project folder (these are images to process)
+
 To build project input in console:
 "make all"
 
